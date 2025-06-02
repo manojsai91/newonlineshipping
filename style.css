@@ -1,0 +1,118 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #ff3f6c;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 220px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px #eee;
+  text-align: center;
+  background: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px #ff3f6c88;
+}
+
+.card img {
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #ff3f6c;
+  font-weight: bold;
+  margin: 5px 0 15px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff3f6c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d6304a;
+}
+
+.cart {
+  position: fixed;
+  right: 20px;
+  top: 80px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 0 0 10px #ff3f6caa;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.cart h2 {
+  margin-top: 0;
+  color: #ff3f6c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-item button {
+  background-color: #eee;
+  color: #ff3f6c;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #999;
+  margin-top: 40px;
+  font-style: italic;
+}
